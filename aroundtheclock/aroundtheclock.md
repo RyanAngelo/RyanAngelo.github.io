@@ -4,6 +4,8 @@ title: Around The Clock
 permalink: /aroundtheclock/
 ---
 
+{% include nav.html %}
+
 ## Around The Clock
 [View on GitHub](https://github.com/RyanAngelo/around-the-clock)
 

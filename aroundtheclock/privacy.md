@@ -4,6 +4,8 @@ title: privacy
 permalink: /aroundtheclock/privacy
 ---
 
+{% include nav.html %}
+
 # Privacy Policy
 
 This application is provided by and is intended for use as is.
@@ -16,11 +18,11 @@ If you choose to use Around The Clock, then you agree to the collection and use 
 
 I do **not** request any personally identifiable information to use Around The Clock.
 
-Around The Clock does **not** use third party services outside of the App Store that may collect information used to identify you.
+Around The Clock does **not** use third party services outside of the App Store to collect information used to identify you.
 
 ## Log Data
 
-Whenever you use Around The Clock, in a case of an error in the app, information about the error may be generated and reported through the MacOS error reporting functionality.
+Whenever you use Around The Clock, in the case of an error in the app, information about the error may be generated and reported through the MacOS error reporting utilities.
 
 ## Security
 
