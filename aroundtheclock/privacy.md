@@ -6,6 +6,8 @@ permalink: /aroundtheclock/privacy
 
 {% include nav.html %}
 
+[Around The Clock](/aroundtheclock)
+
 # Privacy Policy
 
 This application is provided by and is intended for use as is.
