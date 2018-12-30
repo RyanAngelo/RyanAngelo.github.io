@@ -23,6 +23,7 @@ Around the Clock provides a stopwatch, a countdown timer, and an alarm clock in 
 
 ### Release Notes
 12/30/18 1.2.0 Updated to support older versions of macOS (10.12+) and fixed naming issues.
+
 12/28/18 1.2.0 Around the Clock supports Dark Mode in macOS Mojave and is available on the App Store.
 
 [Back](/)
