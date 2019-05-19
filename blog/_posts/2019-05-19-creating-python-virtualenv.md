@@ -16,7 +16,8 @@ This allows a user to have one or more Python environments where different packa
 pip is a python package manager. See if you already have pip:
 
 ```pip -h```
-You can [download and install pip](https://pip.pypa.io/en/latest/installing/)
+
+If you don't hve pip, you can [download and install pip](https://pip.pypa.io/en/latest/installing/)
 
 ## Install virtualenv
 The virtualenv package allows you create the virtual environments. 
