@@ -9,8 +9,6 @@ permalink: /aroundtheclock/
 ## Around The Clock
 [View on GitHub](https://github.com/RyanAngelo/around-the-clock)
 
-[View on App Store](https://itunes.apple.com/us/app/around-the-clock/id1005358082?mt=12)
-
 [View Privacy Policy](/aroundtheclock/privacy)
 
 Around the Clock is a simple, elegant time keeping application written in Swift for MacOS.
