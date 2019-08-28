@@ -26,8 +26,8 @@ git diff --shortstat <taga> <tagb>
 ##Get the number of lines of code (ESLOC) for a repository for a given file type
 
 ```sh
-git ls-files | grep -P ".*\.<filetype>$" | xargs wc -l  
+git ls-files | grep -P ".*\.filetype$" | xargs wc -l  
 ```
-where <filetype> is the type of file whose lines you want to count.
+where filetype is the type of file whose lines you want to count.
 
 {% include nav.html %}
