@@ -17,9 +17,11 @@ title: Ryan Angelo
 description: >- # this means to ignore newlines until "baseurl:"
   The adventure begins when the road ends
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://RyanAngelo.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  RyanAngelo
-
+github:
+  is_project_page: false
+  
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-hacker
