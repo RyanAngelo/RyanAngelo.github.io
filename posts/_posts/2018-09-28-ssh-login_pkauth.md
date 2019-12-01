@@ -66,6 +66,3 @@ ssh-copy-id <your_username>@111.222.3.4
 Both of these options will copy the public key from the client machine to the server's authorized_keys file. You should now be able to ssh from the client system to the server using the public key authentication mechanism. If you did not require a passphrase in your key generation, then you will now be able to login to the server from the client without using a password.
 
 Additional information regarding using Public Key Authentication with OpenSSH is available on the [Ubuntu website](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
-
-
-{% include nav.html %}

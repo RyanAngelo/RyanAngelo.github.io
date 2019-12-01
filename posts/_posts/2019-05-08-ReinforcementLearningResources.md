@@ -18,5 +18,3 @@ This course by David Silver covers introductory topics, Markov Decision Processe
 
 [aikorea/awesome-rl](https://github.com/aikorea/awesome-rl)
 A curated list of Reinforcement learning resources
-
-{% include nav.html %}

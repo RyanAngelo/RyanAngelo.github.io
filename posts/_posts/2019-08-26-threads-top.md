@@ -12,5 +12,3 @@ The following allows for the top 10 processes that are using the most threads. T
 ```sh
 watch -n 1 'ps -eo nlwp,pid,args --sort -nlwp | head'
 ```
-
-{% include nav.html %}

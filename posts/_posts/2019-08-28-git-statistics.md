@@ -27,5 +27,3 @@ git diff --shortstat <taga> <tagb>
 git ls-files | grep -P ".*\.filetype$" | xargs wc -l  
 ```
 where filetype is the type of file whose lines you want to count.
-
-{% include nav.html %}
