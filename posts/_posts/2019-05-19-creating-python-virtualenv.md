@@ -7,8 +7,6 @@ tags: Python
 author: Ryan Angelo
 ---
 
-{% include nav.html %}
-
 The following steps allow for a user to create a Python virtual environment.
 This allows a user to have one or more Python environments where different package combinations can be installed without affecting your system installation of Python.
 

@@ -7,8 +7,6 @@ tags: linux, unix, git
 author: Ryan Angelo
 ---
 
-{% include nav.html %}
-
 The following snippets help obtain information about the number of lines of code that were changed in a git repository.
 
 ### Get commit information between two dates

@@ -7,8 +7,6 @@ tags: linux, unix
 author: Ryan Angelo
 ---
 
-{% include nav.html %}
-
 The following allows for the top 10 processes that are using the most threads. Threads are described by the NLWP (Number of Lightweight Processes) value.
 
 ```sh

@@ -7,8 +7,6 @@ tags: ML, resources
 author: Ryan Angelo
 ---
 
-{% include nav.html %}
-
 Collection of Reinforcement Learning Resources
 
 [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) by Richard Sutton and Andrew Barto (2nd Edition, in progress)

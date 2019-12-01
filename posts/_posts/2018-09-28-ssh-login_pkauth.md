@@ -7,8 +7,6 @@ tags: ssh
 author: Ryan Angelo
 ---
 
-{% include nav.html %}
-
 The following process allows a user to login from a client machine to a remote machine (which we will hereby refer to as server) without using a password, but rather with public key authentication.
 
 1 - Create the RSA Key Pair
