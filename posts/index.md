@@ -1,9 +1,10 @@
 ---
-title: Blog Entries
+title: Posts
+permalink: /posts/
 ---
 
 {% include nav.html %}
-
+## Posts
 {% for post in site.posts %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
 {% endfor %}
