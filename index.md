@@ -9,7 +9,7 @@ layout: default
 # About
 The ability for software to solve problems, improve quality of life, and open new opportunities is what makes programming a passion. I hope to develop projects and ideas that explore the ever-evolving field of Computer Science.
 
-{% include_relative projects_pages/projects.md %}
+{% include_relative project_pages/projects.md %}
 
 # Posts
 {% for post in site.posts limit:5 %}
