@@ -9,11 +9,13 @@ layout: default
 # About
 The ability for software to solve problems, improve quality of life, and open new opportunities is what makes programming a passion. I hope to develop projects and ideas that explore the ever-evolving field of Computer Science.
 
-# Current Projects
+# Projects
+
+## Current Projects
 
 [Wilbur](https://github.com/RyanAngelo/wilbur) An Intelligent Tutoring System (ITS) for helping students enhance their reading comprehension skills.
 
-# Past Projects
+## Past Projects
 
 [Around The Clock](/aroundtheclock) A simple, elegant time keeping application written in Swift for MacOS
 
