@@ -1,6 +1,5 @@
 skin: night
 navigation_pages:
-  - index.md
   - projects/projects.md
   - posts/posts.md
   - notes.md
