@@ -1,12 +1,13 @@
 ---
 layout: default
 title: privacy
-permalink: /aroundtheclock/privacy
+permalink: /projects/aroundtheclock/privacy
 ---
 
 {% include nav.html %}
+{% include breadcrumbs.html %}
 
-[Around The Clock](/aroundtheclock)
+[Around The Clock](/projects/aroundtheclock)
 
 # Privacy Policy
 

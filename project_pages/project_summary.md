@@ -1,17 +1,16 @@
-# Projects
+## Projects
 
-## Current Projects
+[InstantMBTA](/projects/instantmbta)
+A train ticker using a Raspberry Pi Zero W and an Inky pHAT
 
-[Wilbur](https://github.com/RyanAngelo/wilbur) 
+[Wilbur](https://github.com/RyanAngelo/wilbur){:target="_blank"}
 An Intelligent Tutoring System (ITS) for helping students enhance their reading comprehension skills.
 
-## Past Projects
+[Around The Clock](/projects/aroundtheclock) 
+A simple time keeping application written in Swift for MacOS
 
-[Around The Clock](/aroundtheclock) 
-A simple, elegant time keeping application written in Swift for MacOS
-
-[Goal Guardian](https://github.com/RyanAngelo/goalguardian)
+[Goal Guardian](https://github.com/RyanAngelo/goalguardian){:target="_blank"}
 iOS application for keeping track of goals and executing on them
 
-[Time Guardian](https://github.com/RyanAngelo/timeguardian)
+[Time Guardian](https://github.com/RyanAngelo/timeguardian){:target="_blank"}
 iOS application for keeping track of the amount of time that you work on different tasks

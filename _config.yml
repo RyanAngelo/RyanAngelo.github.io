@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Ryan Angelo
 description: >- # this means to ignore newlines until "baseurl:"
-  The adventure begins when the road ends
+  Software Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://RyanAngelo.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  RyanAngelo
@@ -24,10 +24,11 @@ github:
   
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

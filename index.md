@@ -7,7 +7,7 @@ layout: default
 {% include nav.html %}
 
 # About
-The ability for software to solve problems, improve quality of life, and open new opportunities is what makes programming a passion. I hope to develop projects and ideas that explore the ever-evolving field of Computer Science.
+Hi! My name is Ryan. I am a Software Engineer who likes to create small projects and learn new things.
 
 {% include_relative project_pages/project_summary.md %}
 

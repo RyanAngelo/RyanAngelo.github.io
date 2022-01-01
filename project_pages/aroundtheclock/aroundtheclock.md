@@ -1,15 +1,16 @@
 ---
 layout: default
 title: Around The Clock
-permalink: /aroundtheclock/
+permalink: /projects/aroundtheclock/
 ---
 
 {% include nav.html %}
+{% include breadcrumbs.html %}
 
 ## Around The Clock
 [View on GitHub](https://github.com/RyanAngelo/around-the-clock)
 
-[View Privacy Policy](/aroundtheclock/privacy)
+[View Privacy Policy](/projects/aroundtheclock/privacy)
 
 Around the Clock is a simple, elegant time keeping application written in Swift for MacOS.
 
