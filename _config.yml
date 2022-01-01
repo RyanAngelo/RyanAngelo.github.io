@@ -21,6 +21,7 @@ url: "https://RyanAngelo.com" # the base hostname & protocol for your site, e.g.
 github_username:  RyanAngelo
 github:
   is_project_page: false
+logo: /assets/RA_Logo.svg
   
 # Build settings
 markdown: kramdown
@@ -29,6 +30,10 @@ plugins:
   - jekyll-seo-tag
 
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
+
+collections:
+  notes:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

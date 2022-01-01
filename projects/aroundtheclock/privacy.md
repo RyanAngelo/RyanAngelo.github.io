@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 title: privacy
 permalink: /projects/aroundtheclock/privacy
 ---
 
-{% include nav.html %}
 {% include breadcrumbs.html %}
 
 [Around The Clock](/projects/aroundtheclock)

@@ -1,13 +1,10 @@
 ---
-layout: default
+layout: page
 title: Around The Clock
 permalink: /projects/aroundtheclock/
+collection: projects
 ---
 
-{% include nav.html %}
-{% include breadcrumbs.html %}
-
-## Around The Clock
 [View on GitHub](https://github.com/RyanAngelo/around-the-clock)
 
 [View Privacy Policy](/projects/aroundtheclock/privacy)

@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 permalink: /projects/
+title: Projects
+collection: projects
 ---
-{% include nav.html %}
-{% include breadcrumbs.html %}
 
 {% include_relative project_summary.md %}

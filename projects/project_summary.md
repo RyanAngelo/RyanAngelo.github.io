@@ -1,5 +1,3 @@
-## Projects
-
 [InstantMBTA](/projects/instantmbta)
 A train ticker using a Raspberry Pi Zero W and an Inky pHAT
 
