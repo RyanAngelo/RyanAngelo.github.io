@@ -23,7 +23,7 @@ I went with a [simple acyrlic case](https://www.c4labs.com/product/zero-heatsink
 ![Image of back of the system](/assets/images/InstantMBTA/back.png)
 
 ## The Software
-The MBTA provides [an API](https://www.mbta.com/developers/v3-api){:target="_blank"} for getting up-to-date transit information. In particular, their Swagger API documentation was really useful and easy to navigate. Their API documentation also lets you experiment with parameters within the documentation.
+The MBTA provides [an API](https://www.mbta.com/developers/v3-api){:target>="_blank"} for getting up-to-date transit information. In particular, their Swagger API documentation was really useful and easy to navigate. Their API documentation also lets you experiment with parameters within the documentation.
 
 The software piece is written in Python and simply goes out and collects the schedule for the given line and looks at stops of interest. If the stops of interests have predictions (real-time expected arrivals) they are used instead of the pre-determined schedule.
 
@@ -40,7 +40,8 @@ The MBTA API supports Last-Modified caching, so to further optimize the load, a 
 One aspect that was a bit more complex than anticipated was getting the predictions. The predictions provided as part of the schedule endpoint only return a prediction ID. You have to go and get all of the predictions, then finding the ID. I haven't figured out a way to get a prediction by ID without getting all of the predictions. The predicion ID can't seem to be used as a filter.
 
 This doesn't seem like a good solution:
-```
+
+```python
 def find_prediction_by_id(self, prediction_id, predictions):
     prediction = None
     for prediction in predictions['data']:
