@@ -5,7 +5,7 @@ permalink: /projects/aroundtheclock/
 collection: projects
 ---
 
-[View on GitHub](https://github.com/RyanAngelo/around-the-clock)
+<span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/InstantMBTA){:target="_blank"}
 
 [View Privacy Policy](/projects/aroundtheclock/privacy)
 
