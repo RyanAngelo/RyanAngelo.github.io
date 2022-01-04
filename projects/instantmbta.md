@@ -37,9 +37,9 @@ The Inky pHAT takes a relatively long time to refresh, so to reduce the amount o
 #### For the Future
 The MBTA API supports Last-Modified caching, so to further optimize the load, a future improvement would be to add support for checking the header for when the data was last modified and only continuing if it has been updated.
 
-One aspect that was a bit more complex than anticipated was getting the predictions. The predictions provided as part of the schedule endpoint only return a prediction ID. You have to go and get all of the predictions, then finding the ID. I haven't figured out a way to get a prediction by ID without getting all of the predictions. The predicion ID can't seem to be used as a filter.
+One aspect that was a bit more complex than anticipated was getting the predictions. The predictions provided as part of the schedule endpoint only return a prediction ID. I had to go and retrieve all of the predictions, then find the prediction information by the ID. I haven't figured out a way to get a prediction by ID without getting all of the predictions, as it doesn't seem like the prediction ID can be used as a filter for the request.
 
-This doesn't seem like a good solution:
+This doesn't seem like a good solution, I would like to find a better way of getting the prediction data:
 
 ```python
 def find_prediction_by_id(self, prediction_id, predictions):
