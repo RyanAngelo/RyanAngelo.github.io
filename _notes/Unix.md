@@ -1,9 +1,15 @@
 ---
 layout: post
+title: Linux
 name: Linux Notes
 ---
+Notes on Linux
 
-# Notes on Linux
+{% include breadcrumbs.html %}
+
+## Table of Contents
+
+[SSH Key Generation](#ssh-key-generation)
 
 ## SSH Key Generation
 

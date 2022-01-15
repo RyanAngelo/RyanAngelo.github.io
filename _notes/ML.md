@@ -5,6 +5,12 @@ name: Machine Learning Notes
 ---
 Notes on Machine Learning
 
+{% include breadcrumbs.html %}
+
+## Table of Contents
+
+[Python Virtual Environment](#python-virtual-environment)
+
 ## Collection of Reinforcement Learning Resources
 
 [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html) by Richard Sutton and Andrew Barto (2nd Edition, in progress)

@@ -1,27 +1,38 @@
 ---
 layout: post
+title: Python
 name: Python Notes
 ---
 Notes on Python
 
+{% include breadcrumbs.html %}
+
+## Table of Contents
+
+[Python Virtual Environment](#python-virtual-environment)
+
 ## Python Virtual Environment
+
 The following steps allow for a user to create a Python virtual environment.
 This allows a user to have one or more Python environments where different package combinations can be installed without affecting your system installation of Python.
 
-### Setup PIP
+## Setup PIP
+
 pip is a python package manager. See if you already have pip:
 
 ```pip -h```
 
 If you don't hve pip, you can [download and install pip](https://pip.pypa.io/en/latest/installing/)
 
-### Install virtualenv
+## Install virtualenv
+
 The virtualenv package allows you create the virtual environments. 
 Install it with pip:
 
 ```pip install virtualenv```
 
-### Create a Virtual Environment
+## Create a Virtual Environment
+
 Create a virtual environment by specifying a path where you would like the installation to live.
 Example:
 
@@ -30,13 +41,15 @@ Example:
 
 This will give us a separate python installation with its own packages that can be activated and used separately from the system Python installation.
 
-### Activate a Virtual Environment
+## Activate a Virtual Environment
+
 We can activate the python environment:
 
 ```source /home/Users/jon.snow/myLittlePython```
 
 Any Python commands that are run while using this terminal will be using the virtual environment that we just created, and will have any libraries that we subsequently install while having this environment active.
 
-### Deactivate a Virtual Environment
+## Deactivate a Virtual Environment
+
 To stop using the virtual environment, returning us to the system environment we can simply:
 ```deactivate```

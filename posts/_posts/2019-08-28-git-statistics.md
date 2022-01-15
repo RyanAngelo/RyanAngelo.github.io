@@ -26,4 +26,5 @@ git diff --shortstat <taga> <tagb>
 ```sh
 git ls-files | grep -P ".*\.filetype$" | xargs wc -l  
 ```
+
 where filetype is the type of file whose lines you want to count.
