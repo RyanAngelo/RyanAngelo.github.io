@@ -9,7 +9,7 @@ Notes on Machine Learning
 
 ## Table of Contents
 
-[Python Virtual Environment](#python-virtual-environment)
+[Reinforcement Learning Resources](#collection-of-reinforcement-learning-resources)
 
 ## Collection of Reinforcement Learning Resources
 
@@ -18,7 +18,7 @@ This is a great introductory book exploring Reinforcement learning.
 
 [RL Course by David Silver](https://www.youtube.com/watch?v=2pWv7GOvuf0)
 This course by David Silver covers introductory topics, Markov Decision Processes, Dynamic Programming, Model-Free Prediction, Model-Free Control, Value Function Approximation, Policy Gradient Methods, Integrating Learning and Planning, and Exploration and Exploitation.
-[Additional Course Resources available here](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
+[Additional Course Resources available here](https://www.davidsilver.uk/teaching/)
 
 [aikorea/awesome-rl](https://github.com/aikorea/awesome-rl)
 A curated list of Reinforcement learning resources
