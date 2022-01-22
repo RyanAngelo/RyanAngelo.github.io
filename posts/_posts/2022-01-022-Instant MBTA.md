@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instant MBTA"
-date:   2022-01-22 09:17:00 -0400
+date:   2022-01-22 09:17:00 -0500
 categories: projects
 tags: raspberry pi, pHAT, MBTA,
 author: Ryan Angelo
