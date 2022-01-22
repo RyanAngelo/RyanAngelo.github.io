@@ -8,9 +8,9 @@ author: Ryan Angelo
 read_time: true
 ---
 
-<span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/InstantMBTA){:target="_blank"}
+I recently finished up a small project as a gift that provides train schedules on a small-form factor Rasepberry Pi Zero W using an eInk display.
 
-I recently finished up a small project as a gift that provides train schedules on a small-form factor Rasepberry Pi Zero W and an e-ink display.
+<span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/InstantMBTA){:target="_blank"}
 
 InstantMBTA is a project that is designed to leverage a Raspberry Pi Zero W for acquiring and displaying MBTA train schedules on an Inky pHAT display.
 
