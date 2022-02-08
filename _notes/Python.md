@@ -52,7 +52,12 @@ Any Python commands that are run while using this terminal will be using the vir
 ## Deactivate a Virtual Environment
 
 To stop using the virtual environment, returning us to the system environment we can simply:
-```deactivate```
+
+```bash
+deactivate
+```
+
+---
 
 ## Using Pyenv
 
