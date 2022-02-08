@@ -21,7 +21,9 @@ This allows a user to have one or more Python environments where different packa
 
 pip is a python package manager. See if you already have pip:
 
-```pip -h```
+```bash
+pip -h
+```
 
 If you don't hve pip, you can [download and install pip](https://pip.pypa.io/en/latest/installing/)
 
@@ -30,14 +32,18 @@ If you don't hve pip, you can [download and install pip](https://pip.pypa.io/en/
 The virtualenv package allows you create the virtual environments.
 Install it with pip:
 
-```pip install virtualenv```
+```bash
+pip install virtualenv
+```
 
 ## Create a Virtual Environment
 
 Create a virtual environment by specifying a path where you would like the installation to live.
 Example:
 
-```virtualenv /home/Users/jon.snow/myLittlePython```
+```bash
+virtualenv /home/Users/jon.snow/myLittlePython
+```
 
 This will give us a separate python installation with its own packages that can be activated and used separately from the system Python installation.
 
@@ -45,7 +51,9 @@ This will give us a separate python installation with its own packages that can 
 
 We can activate the python environment:
 
-```source /home/Users/jon.snow/myLittlePython```
+```bash
+source /home/Users/jon.snow/myLittlePython
+```
 
 Any Python commands that are run while using this terminal will be using the virtual environment that we just created, and will have any libraries that we subsequently install while having this environment active.
 
