@@ -9,8 +9,7 @@ Notes on Python
 
 ## Table of Contents
 
-[Python Virtual Environment](#using-python-virtual-environment)
-
+[Python Virtual Environment](#using-python-virtual-environment)  
 [Pyenv](#using-pyenv)
 
 ## Using Python Virtual Environment
@@ -28,7 +27,7 @@ If you don't hve pip, you can [download and install pip](https://pip.pypa.io/en/
 
 ## Install virtualenv
 
-The virtualenv package allows you create the virtual environments. 
+The virtualenv package allows you create the virtual environments.
 Install it with pip:
 
 ```pip install virtualenv```
