@@ -43,7 +43,6 @@ Wilbur will be an ITS that provides the framework required to build lessons that
 25. Roscoe, R. D., & McNamara, D. S. (2013). Writing pal: Feasibility of an intelligent writing strategy tutor in the high school classroom. Journal of Educational Psychology, 105(4), 1010–1025. https://doi.org/10.1037/a0032340
 26. Roser, M., Ritchie, H., & Ortiz-Ospina, E. (2015). Internet. Our World in Data. https://ourworldindata.org/internet
 12
-
 27. Shute, V. J., & Psotka, J. (1994). Intelligent Tutoring Systems: Past, Present, and Future.: Defense Technical Information Center. https://doi.org/10.21236/ADA280011
 28. Sidney Pressey. (n.d.). Retrieved June 6, 2020, from http://faculty.coe.uh.edu/smcneil/cuin6373/idhistory/pressey.html
 29. The Automatic Teacher. (2015, February 4). Hack Education. http://hackeducation.com/2015/02/04/the-automatic-teacher
