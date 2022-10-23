@@ -1,6 +1,6 @@
-skin: night
 navigation_pages:
   - about.md
   - projects/projects.md
   - posts/posts.md
   - notes.md
+skin: night
