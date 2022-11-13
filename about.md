@@ -12,4 +12,4 @@ This is a place for me to collect and write about the things that interest me.
 
 {% include icon-linkedin.html username='Ryan-Angelo' label='LinkedIn' %}  |  {% include icon-github.html username='RyanAngelo' label='GitHub' %}
 
-I am software engineer living in New England. I'm curious about all things programming and like to dive into, and experiment with, different areas of software. I find satisfaction in the little victories while programming and unraveling new topics.
+I am software engineer living in New England. I'm curious about all things programming and enjoy learning about and experiment with different areas of software development. I find satisfaction in the little victories while programming and unraveling new topics.
