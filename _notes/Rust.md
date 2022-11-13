@@ -11,6 +11,8 @@ Notes on Rust Development
 
 [Cargo](#cargo)
 
+[Variables](#variables)
+
 ## Cargo
 
 ### Starting a new project
@@ -47,3 +49,28 @@ You can run a specific test:
 `cargo test mytest`
 
 This will run any test that has mytest in the name of the test.
+
+### cargo dependencies
+
+Dependencies can be added to the Cargo.toml in the dependencies section.
+The versions that are used for dependencies use [SemVer](https://semvar.org).
+
+## Variables
+
+In Rust, variables are immutable by default.
+Adding mut before the variable name let's the variable be mutable.
+
+```rust
+let oranges = 5;
+let mut oranges = 5;
+```
+
+'&' indicates that a variable is a reference.
+
+Shadowing the value of a variable means that a variable name is reused rather than making it so that two unique variables need to created.
+
+```rust
+let mut _mutable = 12;
+_mutable = 21;
+let _mutable = true;
+```
