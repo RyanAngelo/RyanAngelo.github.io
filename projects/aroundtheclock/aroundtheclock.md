@@ -13,9 +13,9 @@ Around the Clock is a simple, elegant time keeping application written in Swift 
 
 Around the Clock provides a stopwatch, a countdown timer, and an alarm clock in a clean interface.
 
-![alt text](https://github.com/RyanAngelo/around-the-clock/blob/master/Screenshots/AlarmClockScreenshot_DarkMode.jpg?raw=true)
-![alt text](https://github.com/RyanAngelo/around-the-clock/blob/master/Screenshots/StopwatchScreenshot_DarkMode.jpg?raw=true)
-![alt text](https://github.com/RyanAngelo/around-the-clock/blob/master/Screenshots/CountdownScreenshot_DarkMode.jpg?raw=true)
+![alarm](https://github.com/RyanAngelo/around-the-clock/blob/master/Screenshots/AlarmClockScreenshot_DarkMode.jpg?raw=true)
+![stopwatch](https://github.com/RyanAngelo/around-the-clock/blob/master/Screenshots/StopwatchScreenshot_DarkMode.jpg?raw=true)
+![countdown](https://github.com/RyanAngelo/around-the-clock/blob/master/Screenshots/CountdownScreenshot_DarkMode.jpg?raw=true)
 
 ### Release Notes
 12/30/18 1.2.3 Fixed issue with keeping the window on top when the 'float on top' menu option is enabled.
