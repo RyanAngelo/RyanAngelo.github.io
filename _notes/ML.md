@@ -22,3 +22,6 @@ This course by David Silver covers introductory topics, Markov Decision Processe
 
 [aikorea/awesome-rl](https://github.com/aikorea/awesome-rl)
 A curated list of Reinforcement learning resources
+
+[Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) by Andrej Karpathy
+Lecture series that goes over the construction of neural networks in code.

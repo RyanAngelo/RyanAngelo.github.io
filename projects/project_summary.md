@@ -11,10 +11,10 @@ An Intelligent Tutoring System (ITS) for helping students enhance their reading 
 
 A simple time keeping application written in Swift for MacOS
 
-#### [Goal Guardian](https://github.com/RyanAngelo/goalguardian){:target="_blank"}
+#### Goal Guardian
 
 iOS application for keeping track of goals and executing on them
 
-#### [Time Guardian](https://github.com/RyanAngelo/timeguardian){:target="_blank"}
+#### Time Guardian
 
 iOS application for keeping track of the amount of time that you work on different tasks
