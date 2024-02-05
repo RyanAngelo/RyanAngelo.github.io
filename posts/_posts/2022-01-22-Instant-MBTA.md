@@ -8,7 +8,7 @@ author: Ryan Angelo
 read_time: true
 ---
 
-I recently finished up a small project as a gift that provides train schedules on a small-form factor Rasepberry Pi Zero W using an eInk display.
+I recently finished up a small project as a gift that provides train schedules on a small-form factor Raspberry Pi Zero W using an eInk display.
 
 <span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/InstantMBTA){:target="_blank"}
 
