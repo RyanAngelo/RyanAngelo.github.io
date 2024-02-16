@@ -74,3 +74,7 @@ let mut _mutable = 12;
 _mutable = 21;
 let _mutable = true;
 ```
+
+## Error Handling
+
+In Rust, the question mark ? is an operator used for error handling. When you see line?, it is shorthand for a pattern where an operation that could potentially fail (in this case, reading a line from a file) is attempted, and if the operation is successful, the value is returned. However, if the operation results in an error, the error is returned from the current function.
