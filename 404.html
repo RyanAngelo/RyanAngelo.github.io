@@ -1,24 +1,71 @@
----
-layout: default
----
-
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        .error-code {
+            font-family: monospace;
+            font-size: 72px;
+            color: #ff6b6b;
+            margin: 0;
+        }
+        .console {
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #fff;
+            font-family: monospace;
+            text-align: left;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .home-link {
+            color: #4a90e2;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .home-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <div class="console">
+            <p>> page.find()</p>
+            <p>ERROR: Page not found in cache</p>
+            <p>> page.searchDeeper()</p>
+            <p>ERROR: Still nothing</p>
+            <p>> sudo find page</p>
+            <p>ERROR: Nice try, but even sudo can't help you here</p>
+            <p>> _<span class="blink">▊</span></p>
+        </div>
+        <h2>Oops! Looks like this page is practicing social distancing</h2>
+        <p>The page you're looking for seems to have pulled a classic "It works on my machine" and disappeared into the void. Maybe it's stuck in an infinite loop, or perhaps it's just taking a coffee break.</p>
+        <p>While our debugging hamsters search for the missing content, why not head back home?</p>
+        <a href="/" class="home-link">return to homepage;</a>
+    </div>
+</body>
+</html>
