@@ -20,7 +20,7 @@ The display piece is an [inky pHAT](https://shop.pimoroni.com/products/inky-phat
 
 I went with a [simple acyrlic case](https://www.c4labs.com/product/zero-heatsink-case-raspberry-pi-zero-w/){:target="_blank"} from C4 Labs. Having purchased a few C4 labs cases over the years, I like their simplicity and the fact that you get both form and function.
 
-![Image of back of the system](/assets/images/InstantMBTA/back.png)
+![Image of back of the system](./images/back.png)
 
 ## The Software
 The MBTA provides [an API](https://www.mbta.com/developers/v3-api){:target>="_blank"} for getting up-to-date transit information. In particular, their Swagger API documentation was really useful and easy to navigate. Their API documentation also lets you experiment with parameters within the documentation.
@@ -29,7 +29,7 @@ The software piece is written in Python and simply goes out and collects the sch
 
 The inky pHAT display has a [python library called inky](https://github.com/pimoroni/inky){:target="_blank"} maintained by PIMORONI that makes it easy to display content on the display using PIL. The Inky pHAT is 250x122 so there is limited space for displaying text. I decided to start from the top and work down getting everything lined up. Selecting a font size and determining the height of each line of text, you can move from the top coordinate to the bottom coordinate.
 
-![Image of front of the system](/assets/images/InstantMBTA/front.png)
+![Image of front of the system](./images/front.png)
 
 #### Optimization
 The Inky pHAT takes a relatively long time to refresh, so to reduce the amount of refreshes, the display will only refresh if something has actually changed. I'm looking forward to experimenting with other ways of drawing on the Inky pHAT that might reduce the refresh time.
