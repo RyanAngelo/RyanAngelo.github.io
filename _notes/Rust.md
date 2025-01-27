@@ -78,3 +78,184 @@ let _mutable = true;
 ## Error Handling
 
 In Rust, the question mark ? is an operator used for error handling. When you see line?, it is shorthand for a pattern where an operation that could potentially fail (in this case, reading a line from a file) is attempted, and if the operation is successful, the value is returned. However, if the operation results in an error, the error is returned from the current function.
+
+## Cargo Commands
+
+### Check Code Without Building
+```bash
+cargo check
+```
+
+### Release Build
+```bash
+cargo build --release
+```
+
+### Update Dependencies
+```bash
+cargo update
+```
+
+### Clean Build Artifacts
+```bash
+cargo clean
+```
+
+### Run Tests with Output
+```bash
+cargo test -- --nocapture    # Show println! output
+cargo test -- --show-output  # Show all output
+cargo test -- --test-threads=1  # Run tests sequentially
+```
+
+### Format Code
+```bash
+cargo fmt
+```
+
+### Check Code Style
+```bash
+cargo clippy
+```
+
+### Create Documentation
+```bash
+cargo doc  # Generate docs
+cargo doc --no-deps  # Generate docs excluding dependencies
+cargo doc --open  # Generate and open docs in browser
+```
+
+## Project Structure
+
+```
+my_project/
+├── Cargo.toml
+├── Cargo.lock
+├── src/
+│   ├── main.rs
+│   ├── lib.rs
+│   └── bin/
+│       └── additional_binaries.rs
+├── tests/
+│   └── integration_tests.rs
+└── examples/
+    └── example_code.rs
+```
+
+## Common Attributes
+
+```rust
+// Testing
+#[test]
+#[should_panic]
+#[ignore]
+
+// Derive common traits
+#[derive(Debug)]
+#[derive(Clone, Copy)]
+#[derive(PartialEq, Eq)]
+
+// Visibility
+#[pub]
+#[pub(crate)]
+
+// Conditional compilation
+#[cfg(test)]
+#[cfg(target_os = "linux")]
+```
+
+## Useful Macros
+
+```rust
+println!("Formatted print: {}", value);
+format!("Create a String with {}", value);
+vec![1, 2, 3];  // Create a vector
+assert!(condition);
+assert_eq!(left, right);
+panic!("Error message");
+```
+
+## Common Type Conversions
+
+```rust
+// String conversions
+String::from("literal");
+"literal".to_string();
+&String into &str;
+
+// Number conversions
+let x: i32 = "42".parse().unwrap();
+let y = 42.to_string();
+
+// Vector/Array conversions
+let v: Vec<i32> = (1..4).collect();
+let slice: &[i32] = &v[..];
+```
+
+## Error Handling Patterns
+
+```rust
+// Using Result
+fn fallible() -> Result<Success, Error> {
+    Ok(success_value)
+}
+
+// Using Option
+fn maybe() -> Option<Value> {
+    Some(value)
+}
+
+// Propagating errors
+fn propagate() -> Result<T, E> {
+    let x = something()?;
+    Ok(x)
+}
+
+// Unwrap patterns
+value.unwrap();  // Panics on None/Err
+value.expect("Custom error message");
+value.unwrap_or(default);
+value.unwrap_or_else(|| expensive_computation());
+```
+
+## Memory Management
+
+```rust
+// Box - heap allocation
+let boxed = Box::new(value);
+
+// Rc - reference counting
+use std::rc::Rc;
+let shared = Rc::new(value);
+
+// Arc - atomic reference counting
+use std::sync::Arc;
+let thread_safe = Arc::new(value);
+
+// RefCell - interior mutability
+use std::cell::RefCell;
+let mutable = RefCell::new(value);
+```
+
+## Common Traits
+
+```rust
+// Display formatting
+impl std::fmt::Display for MyType {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "MyType: {}", self.value)
+    }
+}
+
+// Default values
+impl Default for MyType {
+    fn default() -> Self {
+        MyType { value: 0 }
+    }
+}
+
+// Clone and Copy
+#[derive(Clone, Copy)]
+struct MyType {
+    value: i32,
+}
