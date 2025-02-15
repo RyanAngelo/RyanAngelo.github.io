@@ -1,4 +1,8 @@
 
+#### [TRMNL MBTA](/projects/trmnlmbta)
+
+A real-time MBTA schedule display using a TRMNL e-ink display and the MBTA API
+
 #### [InstantMBTA](/projects/instantmbta)
 
 A train ticker using a Raspberry Pi Zero W and an Inky pHAT
