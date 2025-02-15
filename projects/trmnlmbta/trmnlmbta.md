@@ -45,4 +45,42 @@ The application can run in two modes:
 
 This flexibility means you can run it on anything from a Raspberry Pi to a cloud server.
 
+## Configuration & Setup
+
+The application requires several key components to run:
+
+### Required API Keys
+1. **MBTA API Key** - Get one for free at [api-v3.mbta.com](https://api-v3.mbta.com/)
+2. **TRMNL Webhook URL** - Available from your TRMNL dashboard
+3. **Application API Key** - For securing the application's endpoints
+
+### Supported MBTA Lines
+The application supports all major MBTA lines:
+- Red Line
+- Orange Line
+- Blue Line
+- Green Line (B, C, D, E branches)
+
+### Security Features
+- API endpoint protection using API key authentication
+- CORS configuration for secure cross-origin requests
+- Rate limiting on all endpoints
+- Environment variable-based configuration
+
+## Technical Details
+
+The application includes several key features:
+- Real-time schedule updates every 30 seconds
+- Support for multiple stops along a route
+- Clean HTML templating for the e-ink display
+- Configurable through a JSON configuration file
+- Both web server and script modes for flexible deployment
+
+## Getting Started
+
+Want to try it yourself? You'll need:
+1. An MBTA API key (free from MBTA Developer Portal)
+2. A TRMNL display and webhook URL
+3. Python 3.7+
+
 [Back](/)
