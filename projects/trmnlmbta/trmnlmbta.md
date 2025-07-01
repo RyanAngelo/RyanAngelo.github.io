@@ -7,80 +7,75 @@ collection: projects
 
 <span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/trmnl-mbta){:target="_blank"}
 
-# Building a Real-Time MBTA Schedule Display with FastAPI and TRMNL
+# TRMNL MBTA: Real-Time Transit at Your Fingertips
 
-As a regular MBTA rider, I wanted to create a simple way to view train schedules at a glance. Using FastAPI, the MBTA API, and a TRMNL's e-ink display, I built a real-time schedule display that shows upcoming train arrivals for any MBTA line.
+Ever found yourself staring at your phone, refreshing the MBTA app while waiting for your train? I built a solution that brings the classic station arrival board experience right into your home or office.
 
-## The Problem
+## The Vision
 
-While the MBTA provides real-time tracking through their website and app, I wanted something more ambient - a dedicated display that could show arrival times for multiple stops along a line without requiring any interaction. Think of it as a modern take on the classic station arrival boards, but for your home or office.
+Imagine having a beautiful, always-on display that shows you exactly when your next train is coming - no apps to open, no screens to unlock. Just a glance across the room tells you everything you need to know about your commute.
 
-## The Solution
+That's exactly what TRMNL MBTA delivers. Using a sleek e-ink display and real-time MBTA data, it creates an ambient information system that keeps you informed without being intrusive.
 
-I created a Python application that:
-- Fetches real-time prediction data from the MBTA API
-- Processes and organizes arrival times by stop
-- Displays up to three upcoming arrivals for both inbound and outbound trains
-- Updates automatically every 30 seconds
-- Shows everything on a clean, easy-to-read e-ink display
+## What It Does
 
-## Technical Implementation
+**Real-time updates every 30 seconds** show you the next arrivals for up to 12 stops along any MBTA line or bus route. Whether you're tracking the Red Line to work or the 66 bus to your favorite coffee shop, you'll always know what's coming.
 
-The application is built with:
-- FastAPI: For creating a lightweight web server and API endpoints
-- MBTA API: To fetch real-time prediction data
-- TRMNL: An e-ink display platform that receives updates via webhooks
-- Python async/await: For efficient API calls and updates
+The display is clean, minimal, and designed for quick glances - just like the arrival boards you see in stations, but personalized for your specific route and stops.
 
-Here's a simplified look at how it works:
-1. The application fetches predictions from the MBTA API
-2. It organizes the data by stop and direction
-3. The data is formatted into a clean HTML template and sent to the TRMNL display
+## Beyond Just Trains
 
-## Deployment Options
+While I started with subway lines, the system has grown to support the entire MBTA network:
 
-The application can run in two modes:
-- As a web server with continuous updates
-- As a one-off script perfect for cron jobs
+**Subway Lines**: Red, Orange, Blue, and all Green Line branches  
+**Bus Routes**: Every route from the 1 bus to express routes like 501  
+**Special Services**: Silver Line, commuter routes, and more
 
-This flexibility means you can run it on anything from a Raspberry Pi to a cloud server.
+The beauty is in the flexibility - switch between routes with a simple command, and the system automatically adapts to show the right stops in the right order.
 
-## Configuration & Setup
+## Built for Real Life
 
-The application requires several key components to run:
+This isn't just a technical project - it's designed for daily use. The system runs continuously, updating automatically, so you never have to think about it. Perfect for:
 
-### Required API Keys
-1. **MBTA API Key** - Get one for free at [api-v3.mbta.com](https://api-v3.mbta.com/)
-2. **TRMNL Webhook URL** - Available from your TRMNL dashboard
-3. **Application API Key** - For securing the application's endpoints
+- **Home offices** where you want to know when to head out
+- **Kitchen displays** for planning your morning commute
+- **Office lobbies** to help everyone stay on schedule
+- **Anywhere** you want transit information at a glance
 
-### Supported MBTA Lines
-The application supports all major MBTA lines:
-- Red Line
-- Orange Line
-- Blue Line
-- Green Line (B, C, D, E branches)
+## Smart Features
 
-### Security Features
-- API endpoint protection using API key authentication
-- CORS configuration for secure cross-origin requests
-- Rate limiting on all endpoints
-- Environment variable-based configuration
+**Debug Mode**: When you're setting up or troubleshooting, debug mode shows you exactly what data the system is receiving - no need for a display to test things out.
 
-## Technical Details
+**Route Switching**: A simple command lets you switch between any route in the MBTA system. Testing different lines? No problem.
 
-The application includes several key features:
-- Real-time schedule updates every 30 seconds
-- Support for multiple stops along a route
-- Clean HTML templating for the e-ink display
-- Configurable through a JSON configuration file
-- Both web server and script modes for flexible deployment
+**Security First**: All API endpoints are protected, and the system uses environment variables for secure configuration.
+
+**Flexible Deployment**: Run it as a web server for continuous updates, or as a scheduled job for periodic updates. Works on anything from a Raspberry Pi to a cloud server.
+
+## The Technical Story
+
+At its heart, this is a Python application that:
+1. Fetches real-time data from the MBTA API
+2. Processes and organizes arrival times by stop and direction
+3. Formats everything into a clean, e-ink optimized display
+4. Updates automatically via webhooks
+
+The magic happens through FastAPI, which provides a lightweight but powerful web server, and the MBTA's excellent API, which gives us access to real-time prediction data.
 
 ## Getting Started
 
-Want to try it yourself? You'll need:
-1. An MBTA API key (free from MBTA Developer Portal)
-2. A TRMNL display and webhook URL
-3. Python 3.7+
+Ready to bring real-time transit info to your space? Here's what you'll need:
+
+**Hardware**: A TRMNL e-ink display (or just your computer for testing)  
+**Software**: Python 3.7+ and an API key  
+**Data**: Free MBTA API access from their developer portal  
+
+The setup is straightforward - configure your API keys, choose your route, and you're ready to go. The system includes utilities to help you switch between routes and debug any issues.
+
+## Why This Matters
+
+In a world where we're constantly checking our phones for information, there's something refreshing about having the data you need just... there. No unlocking, no scrolling, no ads - just the information you want, when you want it.
+
+This project represents the kind of technology that makes life a little bit easier, a little bit more informed, and a lot more convenient. It's the difference between constantly checking your phone and just knowing when your train is coming.
 
 [Back](/)
