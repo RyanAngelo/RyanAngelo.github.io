@@ -15,14 +15,18 @@ I had experience using NPM and because of some of the security issues that NPM h
 
 I use macOS for development, and tend to use the [Homebrew Package Manager](https://brew.sh) whenever possible, making installing yarn as simple as
 
-```brew install yarn```
+```bash
+brew install yarn
+```
 
 ### Development Server
 
 Next I wanted a quick and easy way of testing the JavaScript that I was working on. The experimentation that I want to do, particularly with [three.js](https://threejs.org) would only be simple JavaScript, HTML and CSS; so I decided to just use the http.server included in Python. 
 Starting up the Python HTTP server is simply a matter of running
 
-```python3 -m http.server```
+```bash
+python3 -m http.server
+```
 
 This will serve content from the current directory on port 8000. You can also bind it to a specific address with --bind.
 
@@ -34,4 +38,6 @@ Being able to manage packages that were installed through Yarn and easily import
 
 I installed this globally with Yarn, because it would not be tied to a specific project.
 
-```yarn global add browserify```
+```bash
+yarn global add browserify
+```
