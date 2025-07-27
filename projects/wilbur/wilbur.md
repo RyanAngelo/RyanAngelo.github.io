@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wilbur
-permalink: /projects/wilbur
+permalink: /projects/wilbur/
 collection: projects
 ---
 

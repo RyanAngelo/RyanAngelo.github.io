@@ -25,11 +25,11 @@ pip is a python package manager. See if you already have pip:
 pip -h
 ```
 
-If you don't hve pip, you can [download and install pip](https://pip.pypa.io/en/latest/installing/)
+If you don't have pip, you can [download and install pip](https://pip.pypa.io/en/latest/installing/)
 
 ## Install virtualenv
 
-The virtualenv package allows you create the virtual environments.
+The virtualenv package allows you to create the virtual environments.
 Install it with pip:
 
 ```bash

@@ -12,18 +12,18 @@ InstantMBTA is a project that is designed to leverage a Raspberry Pi Zero W for 
 This project retrieves the latest train schedules and finds the latest predicted time for arbitrary inbound and outbound trains, leveraging the MBTA's API.
 
 ## The Hardware
-This project runs on a [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-w/){:target="_blank"}. I chose it primary because of the small form factor, the wireless LAN capability and the low energy consumption.
+This project runs on a [Raspberry Pi Zero W](https://www.raspberrypi.com/products/raspberry-pi-zero-w/){:target="_blank"}. I chose it primarily because of the small form factor, the wireless LAN capability and the low energy consumption.
 
-The display piece is an [inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811){:target="_blank"} which is made by PIMORONI. I find eInk/ePaper really interesting and wanted to experiment with it. That, coupled with it's low energy footprint made it a fun choice. I find the eInk a really interesting technology, I hope it finds its way into more applications and becomes more affordable. 
+The display piece is an [inky pHAT](https://shop.pimoroni.com/products/inky-phat?variant=12549254217811){:target="_blank"} which is made by PIMORONI. I find eInk/ePaper really interesting and wanted to experiment with it. That, coupled with its low energy footprint made it a fun choice. I find the eInk a really interesting technology, I hope it finds its way into more applications and becomes more affordable. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Oqu1--AzM7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I went with a [simple acyrlic case](https://www.c4labs.com/product/zero-heatsink-case-raspberry-pi-zero-w/){:target="_blank"} from C4 Labs. Having purchased a few C4 labs cases over the years, I like their simplicity and the fact that you get both form and function.
+I went with a [simple acrylic case](https://www.c4labs.com/product/zero-heatsink-case-raspberry-pi-zero-w/){:target="_blank"} from C4 Labs. Having purchased a few C4 labs cases over the years, I like their simplicity and the fact that you get both form and function.
 
 ![Image of back of the system](./images/back.png)
 
 ## The Software
-The MBTA provides [an API](https://www.mbta.com/developers/v3-api){:target>="_blank"} for getting up-to-date transit information. In particular, their Swagger API documentation was really useful and easy to navigate. Their API documentation also lets you experiment with parameters within the documentation.
+The MBTA provides [an API](https://www.mbta.com/developers/v3-api){:target="_blank"} for getting up-to-date transit information. In particular, their Swagger API documentation was really useful and easy to navigate. Their API documentation also lets you experiment with parameters within the documentation.
 
 The software piece is written in Python and simply goes out and collects the schedule for the given line and looks at stops of interest. If the stops of interests have predictions (real-time expected arrivals) they are used instead of the pre-determined schedule.
 
