@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Linux
-name: Linux Notes
+title: Unix/Linux Development Guide
+name: Unix/Linux Development Guide
 ---
-Notes on Linux
+Essential Unix and Linux commands, tools, and development practices.
 
 {% include breadcrumbs.html %}
 

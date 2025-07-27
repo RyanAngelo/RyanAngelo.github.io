@@ -1,7 +1,7 @@
 ---
-title: Notes
+title: Learning & Resources
 layout: collection
 permalink: /notes/
 collection: notes
 ---
-A collection of notes from working on projects.
+A collection of learning materials, tutorials, and resources from my development journey.

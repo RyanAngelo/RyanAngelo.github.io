@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Rust
-name: Rust Notes
+title: Rust Development Guide
+name: Rust Development Guide
 ---
-Notes on Rust Development
+A comprehensive guide to Rust development, covering essential concepts, tools, and best practices.
 
 {% include breadcrumbs.html %}
 

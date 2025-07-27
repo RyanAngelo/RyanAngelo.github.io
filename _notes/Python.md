@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Python
-name: Python Notes
+title: Python Development Guide
+name: Python Development Guide
 ---
-Notes on Python
+Essential Python development concepts, tools, and best practices for modern development.
 
 {% include breadcrumbs.html %}
 

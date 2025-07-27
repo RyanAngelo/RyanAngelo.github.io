@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Machine Learning
-name: Machine Learning Notes
+title: Machine Learning Resources
+name: Machine Learning Resources
 ---
-Notes on Machine Learning
+Curated resources, tutorials, and insights for machine learning development and research.
 
 {% include breadcrumbs.html %}
 
