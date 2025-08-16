@@ -7,14 +7,6 @@ A comprehensive introduction to GPU programming, covering CUDA, OpenCL, and mode
 
 {% include breadcrumbs.html %}
 
-## Table of Contents
-
-[Introduction](#introduction)
-[Key Concepts](#key-concepts)
-[Programming Models](#programming-models)
-[Getting Started](#getting-started)
-[Resources](#resources)
-
 ## Introduction
 
 GPU (Graphics Processing Unit) programming has evolved far beyond graphics rendering to become a cornerstone of modern high-performance computing. GPUs excel at parallel processing tasks, making them ideal for machine learning, scientific computing, data analysis, and more.
@@ -219,5 +211,3 @@ Cross-platform, open standard for parallel programming.
 - **Occupancy**: Balance between register usage and thread count
 - **Instruction Throughput**: Choose appropriate instruction mix
 - **Memory Latency**: Use memory hierarchy effectively
-
-This guide provides a foundation for GPU programming. Start with simple examples, gradually increase complexity, and always profile your code to understand performance characteristics. 
