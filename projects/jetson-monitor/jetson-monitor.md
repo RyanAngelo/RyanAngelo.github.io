@@ -11,6 +11,8 @@ Jetson Monitor is a real-time web-based monitoring dashboard specifically design
 
 The project emerged from the need to monitor Jetson devices in real-time, particularly their thermal behavior and GPU utilization, which are critical for maintaining optimal performance in edge computing applications.
 
+![dashboard](./screenshots/jetson-monitor.png)
+
 ## Features
 
 ### System Monitoring
