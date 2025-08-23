@@ -1,4 +1,12 @@
 
+#### [Rust Go](/projects/rust-go)
+
+The classic game of Go implemented in Rust using the Bevy game engine with modern graphics and interactive gameplay
+
+#### [Jetson Monitor](/projects/jetson-monitor)
+
+A real-time web-based monitoring dashboard for NVIDIA Jetson devices with system metrics, thermal management, and GPU monitoring
+
 #### [TRMNL MBTA](/projects/trmnlmbta)
 
 A real-time MBTA schedule display using a TRMNL e-ink display and the MBTA API

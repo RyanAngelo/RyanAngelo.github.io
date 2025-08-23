@@ -7,75 +7,122 @@ collection: projects
 
 <span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/trmnl-mbta){:target="_blank"}
 
-# TRMNL MBTA: Real-Time Transit at Your Fingertips
+# TRMNL MBTA
 
-Ever found yourself staring at your phone, refreshing the MBTA app while waiting for your train? I built a solution that brings the classic station arrival board experience right into your home or office.
+A command-line application that fetches real-time MBTA schedule data and displays it on TRMNL e-ink displays. The application provides continuous monitoring of transit schedules with configurable update intervals and support for all MBTA routes.
 
-## The Vision
+## Features
 
-Imagine having a beautiful, always-on display that shows you exactly when your next train is coming - no apps to open, no screens to unlock. Just a glance across the room tells you everything you need to know about your commute.
+- Real-time MBTA schedule data with configurable update intervals (default 30 seconds)
+- Support for all MBTA routes: subway lines, bus routes, and special services
+- E-ink optimized display formatting
+- Multiple operation modes: single run, continuous monitoring, custom intervals
 
-That's exactly what TRMNL MBTA delivers. Using a sleek e-ink display and real-time MBTA data, it creates an ambient information system that keeps you informed without being intrusive.
+## Usage
 
-## What It Does
+```bash
+# Run once and exit
+python cli.py --once
 
-**Real-time updates every 30 seconds** show you the next arrivals for up to 12 stops along any MBTA line or bus route. Whether you're tracking the Red Line to work or the 66 bus to your favorite coffee shop, you'll always know what's coming.
+# Run continuously with default 30-second intervals
+python cli.py
 
-The display is clean, minimal, and designed for quick glances - just like the arrival boards you see in stations, but personalized for your specific route and stops.
+# Custom update intervals
+python cli.py --interval 60
 
-## Beyond Just Trains
+# Switch routes dynamically
+python cli.py --route Red --once
+```
 
-While I started with subway lines, the system has grown to support the entire MBTA network:
+## Technical Implementation
 
-**Subway Lines**: Red, Orange, Blue, and all Green Line branches  
-**Bus Routes**: Every route from the 1 bus to express routes like 501  
-**Special Services**: Silver Line, commuter routes, and more
+### Stack
+- Python 3.7+ with type hints
+- Environment-based configuration
+- pytest testing framework
+- Docker containerization
+- CI/CD with GitHub Actions
 
-The beauty is in the flexibility - switch between routes with a simple command, and the system automatically adapts to show the right stops in the right order.
+### Architecture
+1. MBTA API integration for real-time data
+2. Data parsing and formatting for e-ink displays
+3. Webhook delivery to TRMNL displays
+4. Configurable update intervals and error handling
 
-## Built for Real Life
+## Setup
 
-This isn't just a technical project - it's designed for daily use. The system runs continuously, updating automatically, so you never have to think about it. Perfect for:
+```bash
+# Environment configuration
+cp .env.example .env
+# Edit .env with MBTA_API_KEY and TRMNL_WEBHOOK_URL
 
-- **Home offices** where you want to know when to head out
-- **Kitchen displays** for planning your morning commute
-- **Office lobbies** to help everyone stay on schedule
-- **Anywhere** you want transit information at a glance
+# Verify configuration
+python scripts/verify_env.py
 
-## Smart Features
+# Test run
+python cli.py --once
+```
 
-**Debug Mode**: When you're setting up or troubleshooting, debug mode shows you exactly what data the system is receiving - no need for a display to test things out.
+## Deployment
 
-**Route Switching**: A simple command lets you switch between any route in the MBTA system. Testing different lines? No problem.
+**Systemd Service**:
+```bash
+sudo cp examples/systemd-service.txt /etc/systemd/system/trmnl-mbta.service
+sudo systemctl enable trmnl-mbta
+```
 
-**Security First**: All API endpoints are protected, and the system uses environment variables for secure configuration.
+**Cron Job**:
+```bash
+*/5 * * * * cd /path/to/trmnl-mbta && python cli.py --once
+```
 
-**Flexible Deployment**: Run it as a web server for continuous updates, or as a scheduled job for periodic updates. Works on anything from a Raspberry Pi to a cloud server.
+**Docker**:
+```bash
+docker-compose up -d
+```
 
-## The Technical Story
+## Configuration
 
-At its heart, this is a Python application that:
-1. Fetches real-time data from the MBTA API
-2. Processes and organizes arrival times by stop and direction
-3. Formats everything into a clean, e-ink optimized display
-4. Updates automatically via webhooks
+### Environment Variables
+- `MBTA_API_KEY`: MBTA API key
+- `TRMNL_WEBHOOK_URL`: TRMNL display webhook URL
+- `DEBUG_MODE`: Enable debug logging
 
-The magic happens through FastAPI, which provides a lightweight but powerful web server, and the MBTA's excellent API, which gives us access to real-time prediction data.
+### Supported Routes
+- Subway lines: Red, Orange, Blue, Green (B, C, D, E branches)
+- Bus routes: Local (1-747) and express (501+)
+- Special services: Silver Line, ferry, commuter rail
 
-## Getting Started
+## Development
 
-Ready to bring real-time transit info to your space? Here's what you'll need:
+```bash
+# Setup
+make setup-dev
 
-**Hardware**: A TRMNL e-ink display (or just your computer for testing)  
-**Software**: Python 3.7+ and an API key  
-**Data**: Free MBTA API access from their developer portal  
+# Testing
+make test
 
-The setup is straightforward - configure your API keys, choose your route, and you're ready to go. The system includes utilities to help you switch between routes and debug any issues.
+# Linting
+make lint
 
-## Why This Matters
+# Debug mode
+DEBUG_MODE=true python cli.py --once
+```
 
-In a world where we're constantly checking our phones for information, there's something refreshing about having the data you need just... there. No unlocking, no scrolling, no ads - just the information you want, when you want it.
+### Quality Assurance
+- Unit and integration tests with pytest
+- Automated linting with flake8 and pre-commit hooks
+- Environment validation scripts
+- Development container support
 
-This project represents the kind of technology that makes life a little bit easier, a little bit more informed, and a lot more convenient. It's the difference between constantly checking your phone and just knowing when your train is coming.
+
+
+
+## Design Considerations
+
+- **Reliability**: 24/7 operation with error handling and automatic retries
+- **Modularity**: Clean separation of concerns for easy maintenance and extension
+- **Production-Ready**: Comprehensive deployment options and monitoring tools
+- **Developer Experience**: Full development container support and automated testing
 
 [Back](/)
