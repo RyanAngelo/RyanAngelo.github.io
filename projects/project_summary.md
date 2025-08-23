@@ -1,7 +1,7 @@
 
 #### [Rust Go](/projects/rust-go)
 
-The classic game of Go implemented in Rust using the Bevy game engine with modern graphics and interactive gameplay
+The classic game of Go implemented in Rust using the Bevy game engine
 
 #### [Jetson Monitor](/projects/jetson-monitor)
 
