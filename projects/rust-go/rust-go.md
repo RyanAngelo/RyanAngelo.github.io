@@ -23,6 +23,8 @@ The project leverages the **Bevy game engine**, a modern, data-driven game engin
 - **Modularity**: Clean separation of game logic and rendering
 - **Flexibility**: Easy extension and modification of game features
 
+![screenshot](./screenshots/Go-Screenshot.png)
+
 ### Core Architecture
 
 #### Game Logic (`src/game.rs`)
