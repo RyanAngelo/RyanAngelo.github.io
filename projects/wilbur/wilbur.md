@@ -9,7 +9,21 @@ collection: projects
 
 Intelligent Tutoring Systems (ITS) are platforms that allow for students to learn concepts and receive feedback through the use of computers. Intelligent Tutoring Systems (ITS) are software systems that work with students to help a with learning a skill. Fundamentally, ITS provide feedback to students in order to facilitate learning and growth. Modern ITS help educate students across a vast array of topics. ITS are leveraged in reading comprehension education, helping students to improve their ability to read and understand various forms of text.
 
-Wilbur will be an ITS that provides the framework required to build lessons that help students improve their reading comprehension skills. Wilbur focuses on two main aspects of ITS that are lacking in other implementations. First, Wilbur works towards providing student engagement, and has the framework in place to provide feedback that is at the appropriate level for the student’s performance. Second, Wilbur focuses on providing teachers with a simple way to create lessons for students, making the system approachable and user friendly. Wilbur is a web-based tool, providing easy access to students and teachers in remote learning-based scenarios.
+Wilbur will be an ITS that provides the framework required to build lessons that help students improve their reading comprehension skills. Wilbur focuses on two main aspects of ITS that are lacking in other implementations. First, Wilbur works towards providing student engagement, and has the framework in place to provide feedback that is at the appropriate level for the student's performance. Second, Wilbur focuses on providing teachers with a simple way to create lessons for students, making the system approachable and user friendly. Wilbur is a web-based tool, providing easy access to students and teachers in remote learning-based scenarios.
+
+## Current Development: LLM-Powered Content Creation
+
+Building on the foundational research of Wilbur, I am currently exploring how Large Language Models (LLMs) can revolutionize the way teachers create engaging reading comprehension materials. This work focuses on leveraging AI to guide educators in developing lessons and assessment questions that not only evaluate students' reading comprehension abilities but do so in a fun and interactive manner.
+
+The LLM-powered approach addresses one of the key challenges identified in the original Wilbur framework: making lesson creation both simple for teachers and engaging for students. By using AI assistance, teachers can:
+
+- Generate age-appropriate reading passages tailored to specific learning objectives
+- Create diverse question types that assess different levels of comprehension (literal, inferential, and critical thinking)
+- Develop interactive activities and gamified elements that maintain student engagement
+- Receive suggestions for differentiated instruction based on student performance data
+- Generate immediate, constructive feedback that guides student learning
+
+This evolution of the Wilbur concept represents a practical application of intelligent tutoring principles, where AI serves as a collaborative partner to educators rather than a replacement, enhancing their ability to create meaningful, personalized learning experiences for students.
 
 ## Resources
 
