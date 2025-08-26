@@ -5,7 +5,7 @@ permalink: /projects/wilbur/
 collection: projects
 ---
 
-<span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/wilbur){:target="_blank"}
+<!-- <span class="icon icon--github">{% include icon-github.svg %}</span> [View on GitHub](https://github.com/RyanAngelo/wilbur){:target="_blank"} -->
 
 Intelligent Tutoring Systems (ITS) are platforms that allow for students to learn concepts and receive feedback through the use of computers. Intelligent Tutoring Systems (ITS) are software systems that work with students to help a with learning a skill. Fundamentally, ITS provide feedback to students in order to facilitate learning and growth. Modern ITS help educate students across a vast array of topics. ITS are leveraged in reading comprehension education, helping students to improve their ability to read and understand various forms of text.
 
