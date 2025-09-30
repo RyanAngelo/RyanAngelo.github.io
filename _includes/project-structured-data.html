@@ -1,0 +1,43 @@
+{% if page.collection == "projects" or (page.layout == "page" and (page.title contains "Go" or page.title contains "MBTA" or page.title contains "Jetson" or page.title contains "TRMNL" or page.title contains "Wilbur" or page.title contains "Around")) %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ page.title }}",
+  "description": "{{ page.excerpt | default: page.content | strip_html | strip_newlines | truncate: 160 }}",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Angelo",
+    "url": "{{ site.url }}"
+  },
+  "url": "{{ page.url | absolute_url }}",
+  {% if page.title contains "Rust" %}
+  "programmingLanguage": "Rust",
+  "runtimePlatform": "Cross-platform",
+  "applicationCategory": "Game",
+  {% elsif page.title contains "MBTA" or page.title contains "TRMNL" %}
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Raspberry Pi",
+  "applicationCategory": "Utility",
+  {% elsif page.title contains "Jetson" %}
+  "programmingLanguage": "Python",
+  "runtimePlatform": "NVIDIA Jetson",
+  "applicationCategory": "DeveloperApplication",
+  {% elsif page.title contains "Wilbur" %}
+  "programmingLanguage": "JavaScript",
+  "runtimePlatform": "Web Browser",
+  "applicationCategory": "EducationalApplication",
+  {% elsif page.title contains "Around" %}
+  "programmingLanguage": "Swift",
+  "runtimePlatform": "macOS",
+  "applicationCategory": "BusinessApplication",
+  {% endif %}
+  "creator": {
+    "@type": "Person",
+    "name": "Ryan Angelo"
+  },
+  "dateCreated": "{{ page.date | default: '2019-01-01' | date_to_xmlschema }}",
+  "operatingSystem": {% if page.title contains "Around" %}"macOS"{% elsif page.title contains "MBTA" %}"Linux"{% else %}"Cross-platform"{% endif %}
+}
+</script>
+{% endif %}
