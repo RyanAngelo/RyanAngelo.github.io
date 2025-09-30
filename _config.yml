@@ -31,6 +31,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 
 collections:
