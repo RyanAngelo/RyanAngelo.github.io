@@ -19,9 +19,17 @@ A real-time MBTA schedule display using a TRMNL e-ink display and the MBTA API
 
 A train ticker using a Raspberry Pi Zero W and an Inky pHAT
 
+#### [MBTA Dispatch](/projects/mbta-dashboard)
+
+A text-heavy Svelte dashboard for MBTA subway lines with per-line boards and a route finder that uses live predictions, service status, and schedules from the MBTA v3 API
+
 #### [Wilbur](/projects/wilbur)
 
 An Intelligent Tutoring System (ITS) for helping students enhance their reading comprehension skills.
+
+#### [Storybook](/projects/storybook)
+
+A bedtime story generator for parents: persistent characters, LLM-generated stories with safety checks, DALL-E illustrations, and duplex-ready printing
 
 #### [Around The Clock](/projects/aroundtheclock)
 
