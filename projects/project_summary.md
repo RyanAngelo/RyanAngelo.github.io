@@ -34,11 +34,3 @@ A bedtime story generator for parents: persistent characters, LLM-generated stor
 #### [Around The Clock](/projects/aroundtheclock)
 
 A simple time keeping application written in Swift for MacOS
-
-#### Goal Guardian
-
-iOS application for keeping track of goals and executing on them
-
-#### Time Guardian
-
-iOS application for keeping track of the amount of time that you work on different tasks
